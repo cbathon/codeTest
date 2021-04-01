@@ -1,3 +1,8 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+
+
 /* create same layout as Figma mockup */
 body {
   position: absolute;
@@ -79,8 +84,8 @@ nav a {
 #title {
   width: 564px;
   height: 45px;
-
-  font-family: Playfair Display;
+  
+  font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 60px;
@@ -93,7 +98,7 @@ nav a {
   height: 270px;
   margin-top: 40px;
 
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 31px;
@@ -106,7 +111,7 @@ nav a {
   height: 100px;
   margin-top: 36px;
 
-  font-family: Proxima Nova;
+  font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -115,10 +120,11 @@ nav a {
 }
 
 #button {
-  position: absolute;
   margin-top: 40px;
   width: 265px;
   height: 60px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 15px 27px;
 
@@ -130,14 +136,44 @@ nav a {
   0px 12.5216px 10.0172px rgba(0, 0, 0, 0.02), 
   0px 6.6501px 5.32008px rgba(0, 0, 0, 0.02), 
   0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
 
-  font-family: Proxima Nova;
+#button-label {
+  position: static;
+  width: 192px;
+  height: 30px;
+  right: 46px;
+  top: calc(50% - 30px/2);
+  
+  font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 30px;
+  
   text-align: right;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
+ 
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-right: 10px;
+}
+
+#button-arrow {
+  position: static;
+  width: 4px;
+  right: 27px;
+  top: 43.33%;
+  bottom: 43.33%;
+
+  border: 1.5px solid #FFFFFF;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-left : 0px 15px;
 }
